@@ -1,16 +1,16 @@
-# poligrades-downloader
-Questo è uno script scritto in Python 3 che esegue il parsing del testo presente sui Servizi Online del Politecnico di Milano e salva in un database SQLite gli esiti degli esami di tutti gli studenti.
+# PoliGradesAverage
+Questo è uno script scritto in Python 3 che esegue il parsing del testo presente sui Servizi Online del Politecnico di Milano e salva in un file di testo alcune statistiche riguardo l'esame, facendo visualizzare un grafico con l'andamento dei voti.
 
-I dati salvati nel database sono:
-* Codice, descrizione e CFU dell'insegnamento
-* Numero di matricola e codice persona dello studente
-* Esito dell'esame
+I dati salvati nel file sono:
+* Nome e CFU dell'insegnamento
+* Data Esame (da inserire)
+* Media dei voti
+* Numero di persone che hanno fatto l'esame, numero di bocciati/rimandati/riprovati
 
-Nella tabella `studenti` del database è anche presente un campo `nome` che però dovrà essere compilato manualmente con dati ottenuti da altre fonti. Per motivi di privacy, il Politecnico di Milano non pubblica i nomi degli studenti insieme agli esiti degli esami.
 
 ## Requisiti
 * Python 3
-* Modulo `sqlite3`
+* Modulo `matplotlib.pyplot`, `re`
 
 ## Utilizzo dello script
 Lo script accetta come input attraverso `stdin` il testo contenente gli esiti dell'esame e inserisce i dati nel database `grades.db`. Il testo a cui si fa riferimento può essere ottenuto dalla sezione *Consultazione esito esami* dei [Servizi Online](https://www.polimi.it/servizionline/) del Politecnico. Il testo nel riquadro rosso nello scheenshot qui sotto è ciò che deve essere passato via `stdin` allo script `poligrades-downloader.py`.
