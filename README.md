@@ -13,7 +13,7 @@ I dati salvati nel file sono:
 * Modulo `matplotlib.pyplot`, `re`
 
 ## Utilizzo dello script
-Lo script accetta come input attraverso `file` (chiamato voti.txt) il testo contenente gli esiti dell'esame e visualizza a terminale i dati dell'esito. Il testo a cui si fa riferimento può essere ottenuto dalla sezione *Consultazione esito esami* dei [Servizi Online](https://www.polimi.it/servizionline/) del Politecnico. Il testo nel riquadro rosso nello scheenshot qui sotto è ciò che deve essere salvato in un file chiamato `voti.txt`, da salvare nella stessa cartella dello script `poligrades-downloader.py`.
+Lo script accetta come input attraverso `file` (chiamato voti.txt) il testo contenente gli esiti dell'esame e visualizza a terminale i dati dell'esito. Il testo a cui si fa riferimento può essere ottenuto dalla sezione *Consultazione esito esami* dei [Servizi Online](https://www.polimi.it/servizionline/) del Politecnico. Il testo nel riquadro rosso nello scheenshot qui sotto è ciò che deve essere salvato in un file chiamato `voti.txt`, da salvare nella stessa cartella dello script `poligrades.py`.
 
 ![Esempio testo da selezionare](screenshot.png)
 
